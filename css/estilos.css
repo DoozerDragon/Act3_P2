@@ -1,0 +1,182 @@
+/* Reinicio de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+header {
+    background-color: #109c10;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+/* Sección principal */
+section {
+    background-color: #b2fca8;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+article, fieldset {
+    width: 58%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 1%;
+}
+
+fieldset {
+    width: 38%;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #109c10;
+    background-color: #fff;
+}
+
+legend {
+    font-weight: bold;
+}
+
+fieldset input {
+    display: block;
+    margin: 0 auto 10px;
+    height: 30px;
+    font-size: 1rem;
+    width: calc(100% - 20px);
+}
+
+/* Botones */
+button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #A52A2A;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+article {
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+article input {
+    margin: 0 auto;
+    height: 30px;
+    width: 100px;
+    font-size: 1rem;
+}
+
+article button {
+    width: 30px;
+    height: 30px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #CDCDCD;
+    padding: 5px 10px;
+    font-size: 1rem;
+    text-align: left;
+}   
+
+td {
+    border-bottom: 2px solid #8080C0;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+#titulos {
+    text-align: right;
+}
+
+/* Estilos para resaltar */
+.fondo {
+    background-color: #db9a9a;
+}
+
+.texto {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Diseño adaptable */
+@media (max-width: 768px) {
+    section {
+        padding: 10px;
+    }
+    
+    article, fieldset {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+    
+    tr {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        margin-bottom: 1em;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    #titulos h4 {
+        margin: 0.3em 0;
+    }
+
+    fieldset input {
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+}

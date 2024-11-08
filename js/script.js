@@ -1,4 +1,3 @@
-// script.js
 const app1 = {
     data(){
         return {
@@ -7,6 +6,17 @@ const app1 = {
             nuevaFruta: '',
             nuevaCantidad: 0,
             nuevoPrecio: 0,
+        }
+    },
+    computed: {
+        subtotal() {
+            return this.frutas.reduce((sum, fruta) => sum + fruta.cantidad * fruta.precioUnitario, 0);
+        },
+        iva() {
+            return this.subtotal * 0.16;
+        },
+        total() {
+            return this.subtotal + this.iva;
         }
     },
     methods: {
@@ -20,22 +30,12 @@ const app1 = {
                     cantidad: this.nuevaCantidad,
                     precioUnitario: this.nuevoPrecio
                 });
-                // Reiniciar los valores de los campos
                 this.nuevaFruta = '';
                 this.nuevaCantidad = 0;
                 this.nuevoPrecio = 0;
             }
         }
-    },
-    /*computed: {
-        totalFrutas() {
-            let total = 0;
-            for (let i = 0; i < this.frutas.length; i++) {
-                total += this.frutas[i].cantidad;
-            }
-            return total;
-        }
-    }*/
+    }
 };
 
 const apli2 = Vue.createApp(app1).mount('#seccion');

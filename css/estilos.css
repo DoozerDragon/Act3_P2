@@ -8,23 +8,28 @@
 body {
     font-size: 1rem;
     font-family: Arial, sans-serif;
+    background-color: #f0f4ff;
+    color: #333;
 }
 
 /* Encabezado */
 header {
-    background-color: #109c10;
+    background-color: #5c5cfa;
     text-align: center;
     color: #fff;
-    font-size: 1.5rem;
-    padding: 10px 0;
+    font-size: 1.8rem;
+    padding: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Sección principal */
 section {
-    background-color: #b2fca8;
-    padding: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
+    background-color: #e6e8ff;
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 article, fieldset {
@@ -39,33 +44,44 @@ fieldset {
     padding: 20px;
     text-align: center;
     font-size: 1rem;
-    border: 1px solid #109c10;
-    background-color: #fff;
+    border: 2px solid #5c5cfa;
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 
 legend {
     font-weight: bold;
+    color: #5c5cfa;
 }
 
 fieldset input {
     display: block;
-    margin: 0 auto 10px;
+    margin: 10px auto;
     height: 30px;
     font-size: 1rem;
     width: calc(100% - 20px);
+    border: 1px solid #d1d1e0;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /* Botones */
 button {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 10px;
-    background-color: #A52A2A;
+    background-color: #5c5cfa;
     color: #fff;
     cursor: pointer;
     border: none;
     font-size: 1rem;
     font-family: Arial, sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4343d3;
 }
 
 article {
@@ -79,35 +95,56 @@ article input {
     height: 30px;
     width: 100px;
     font-size: 1rem;
+    border: 1px solid #d1d1e0;
+    border-radius: 5px;
+    text-align: center;
 }
 
 article button {
     width: 30px;
     height: 30px;
+    background-color: #5c5cfa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+article button:hover {
+    background-color: #4343d3;
 }
 
 /* Tabla */
 table {
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     text-align: center;
-    background-color: #fff;
+    background-color: #ffffff;
     border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 th {
-    background-color: #CDCDCD;
-    padding: 5px 10px;
+    background-color: #d1d1e0;
+    padding: 10px;
     font-size: 1rem;
     text-align: left;
-}   
+    color: #5c5cfa;
+}
 
 td {
-    border-bottom: 2px solid #8080C0;
-    padding: 8px;
+    border-bottom: 1px solid #d1d1e0;
+    padding: 10px;
     font-size: 1rem;
+}
+
+#titulos h4 {
+    color: #333;
+    font-weight: normal;
 }
 
 #titulos {
@@ -116,11 +153,11 @@ td {
 
 /* Estilos para resaltar */
 .fondo {
-    background-color: #db9a9a;
+    background-color: #edefff;
 }
 
 .texto {
-    color: #fff;
+    color: #5c5cfa;
     font-size: 1.2rem;
 }
 
